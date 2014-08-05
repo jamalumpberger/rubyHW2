@@ -18,6 +18,6 @@ text_block = gets.chomp
 separate_words = text_block.split(" ")
 hash_count = Hash.new(0)
 separate_words.each { |word| hash_count[word] += 1 }
-hash_count = hash_count.sort_by {|x, y|}
+hash_count = hash_count.sort_by {|x, y| y}
 hash_count.reverse!
 puts hash_count[0]
