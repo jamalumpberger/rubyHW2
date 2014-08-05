@@ -21,4 +21,3 @@ separate_words.each { |word| hash_count[word] += 1 }
 hash_count = hash_count.sort_by {|x, y|}
 hash_count.reverse!
 puts hash_count[0]
-# hash_count.each { |word, count| puts word + " " + .to_s }
